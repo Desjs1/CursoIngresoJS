@@ -6,16 +6,20 @@ function mostrar()
 	var promedio;
 
 	while(contador < 5);{
-		numero=parseInt(prompt("ingrese un numero: "));
-		acumulador = acumulador + numero;
 
-		contador++;
-	}
+		numnero=parseInt(prompt("ingrese un numero: "));
 
-	acumulador= parseInt(acumulador);
+		while(isNaN(numero)){
+
+			numnero=parseInt(prompt("ingrese un numero: "));
+		}
+
+		acumulador= acumulador + numero;
+
+		contafor++;
 
 	promedio= acumulador / 5
-
+	}
 
 
 document.getElementById('suma').value=acumulador;
